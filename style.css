@@ -1,0 +1,441 @@
+@font-face {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-stretch: 100%;
+    font-display: block;
+    src: url(https://design.penpot.app/internal/gfonts/font/inconsolata/v32/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp1s7WR32lw.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Zeyada';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(https://design.penpot.app/internal/gfonts/font/zeyada/v19/11hAGpPTxVPUbgZzM2ys.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+    min-width: 100%;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.page-base {
+    position: relative;
+    width: 1792px;
+    height: 992px;
+    background: #FFFFFF;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.main-page {
+    position: absolute;
+    left: 425.5px;
+    top: 93px;
+    width: 941px;
+    height: 806px;
+    background: rgba(196, 245, 196, 0.5);
+    overflow: hidden;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-items: start;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 15px 15px 15px;
+    grid-template-rows: 146px 431px 146px;
+    grid-template-columns: 227px 593px;
+}
+
+.visitors-container {
+    position: relative;
+    width: 226px;
+    height: 147px;
+    background: rgba(248, 124, 240, 0.504);
+    align-self: center;
+    justify-self: start;
+    grid-column: 1;
+    grid-row: 3;
+    font-family: "Inconsolata";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.visitors-text {
+    width: 161px;
+    height: 29px;
+
+}
+
+.visitors-count {
+    align-self: flex-end;
+    height: 200px;
+    width: auto;
+    text-align: center;
+    font-size: 65px;
+
+}
+
+
+.page-main-content {
+    position: relative;
+    width: 592px;
+    height: 592px;
+    background: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    align-self: center;
+    grid-column: 2;
+    grid-row: 2 / 4;
+    overflow-y: scroll;
+    font-family: "Inconsolata";
+}
+
+.recent-posts-container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.post {
+    width: 549px;
+    height: 279px;
+    margin: 20px;
+    background: #FCF8BC;
+    border: 1px dashed #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.post-title-container {
+    margin-left: 12px;
+    font-size: 18px;
+    color: #f796ff;
+}
+
+.paragraph-container {
+    align-self: center;
+    width: 504px;
+    height: 191px;
+    background: #FFFFFF;
+    overflow: hidden;
+    font-size: 14px;
+    color: #8a8989;
+}
+
+
+.recent-posts-title-container {
+    position: absolute;
+    left: 22px;
+    top: 18px;
+    width: 155px;
+    height: 34px;
+}
+
+.profile-container {
+    position: relative;
+    width: 227px;
+    height: 430px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px dashed #f49af9;
+    overflow: hidden;
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.github-text-box {
+    position: absolute;
+    top: 390px;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.github-text-box {
+    color: rgba(99, 80, 255, 0.765);
+    text-transform: none;
+    caret-color: rgba(99, 80, 255, 0.765);
+    text-decoration: none;
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-family: "sourcesanspro";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.profile-text-container {
+    position: absolute;
+    left: 31px;
+    top: 162px;
+    width: 166px;
+    height: 165px;
+
+}
+
+.profile-description {
+    color: rgb(74, 7, 89);
+    text-transform: none;
+
+    line-break: auto;
+    overflow-wrap: initial;
+    white-space: break-spaces;
+    text-rendering: geometricPrecision;
+    caret-color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    letter-spacing: 0px;
+    font-size: 10px;
+    font-family: "Inconsolata";
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.profile-pic {
+    position: absolute;
+    left: 31px;
+    top: 35px;
+    width: 166px;
+    height: 104px;
+    background: url(./casca.jpeg) no-repeat center center / cover;
+    border-radius: 0px;
+}
+
+
+.header-container {
+    position: relative;
+    width: 594px;
+    height: 149px;
+    background: rgba(196, 241, 245, 0.6);
+    overflow: hidden;
+    grid-column: 2;
+    grid-row: 1;
+
+}
+
+
+.header-title-container {
+    position: absolute;
+    left: 200px;
+    top: 15px;
+    width: 400px;
+    height: 66px;
+}
+
+.header-title {
+    color: rgba(0, 0, 0, 1);
+    text-transform: none;
+    text-align: center;
+    line-break: auto;
+    white-space: break-spaces;
+    text-rendering: geometricPrecision;
+    caret-color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    letter-spacing: 0px;
+    font-size: 50px;
+    font-family: "Zeyada";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.leaves-column {
+    position: absolute;
+    left: 550px;
+    top: 26px;
+    width: 36px;
+    height: 108px;
+}
+
+.leaf-3 {
+    position: absolute;
+    left: 3.37px;
+    top: 80.43px;
+    width: 29.26px;
+    height: 25.04px;
+    transform: matrix(-0.98, -0.21, 0.30, -0.96, -0.00, 0.00);
+    background: url(./leaf.png) no-repeat center center / cover;
+    border-radius: 0px;
+}
+
+.leaf-2 {
+    position: absolute;
+    left: 3.67px;
+    top: 37.69px;
+    width: 24.71px;
+    height: 29.54px;
+    transform: matrix(0.00, -1.00, 1.00, -0.00, -0.00, 0.00);
+    background: url(./leaf.png) no-repeat center center / cover;
+    border-radius: 0px;
+}
+
+.leaf-1 {
+    position: absolute;
+    left: 4.63px;
+    top: 0px;
+    width: 28.84px;
+    height: 24.12px;
+    background: url(./leaf.png) no-repeat center center / cover;
+    border-radius: 0px;
+}
+
+.sparkles {
+    position: absolute;
+    left: -27.56px;
+    top: -14.96px;
+    width: 227px;
+    height: 172px;
+    transform: matrix(0.00, 1.00, -1.00, 0.00, -0.00, 0.00);
+    background: url(./sparkles.png) no-repeat center center / cover;
+    border-radius: 0px;
+}
+
+.sumario {
+    position: relative;
+    width: 227px;
+    height: 144px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.item-3 {
+    position: absolute;
+    left: 0px;
+    top: 72px;
+    width: 227px;
+    height: 36.01px;
+    box-shadow: inset 4px 4px 4px 0px rgba(159, 242, 159, 0.5);
+    list-style: none;
+    background-color: rgb(255 255 255 / 50%);
+}
+
+.item-2 {
+    position: absolute;
+    left: 0px;
+    top: 35.5px;
+    width: 227px;
+    height: 36.01px;
+    box-shadow: inset 4px 4px 4px 0px rgba(159, 242, 159, 0.5);
+    list-style: none;
+    background: rgba(252, 248, 188, 0.75);
+}
+
+
+.item-4 {
+    position: absolute;
+    left: 0px;
+    top: 108px;
+    width: 227px;
+    height: 36.01px;
+    box-shadow: inset 4px 4px 4px 0px rgba(159, 242, 159, 0.5);
+    list-style: none;
+    background: rgba(252, 248, 188, 0.75);
+
+
+}
+
+.item-1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 227px;
+    height: 36.01px;
+    box-shadow: inset 4px 4px 4px 0px rgba(159, 242, 159, 0.5);
+    list-style: none;
+    background-color: rgb(255 255 255 / 50%);
+}
+
+.item-name-box {
+    position: absolute;
+    left: 32px;
+    top: 10px;
+    width: 100px;
+    height: 16px;
+}
+
+.item-name {
+    margin: 0;
+    padding-left: 10px;
+    font-size: 15px;
+    font-family: "Inconsolata";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.home-icon {
+    position: absolute;
+    left: 3px;
+    top: 4px;
+    width: 25px;
+    height: 28px;
+    background: url(./home.png) center center / cover;
+    border-radius: 0px;
+}
+
+.squirrel-icon {
+    position: absolute;
+    left: 1px;
+    top: 0.25px;
+    width: 36px;
+    height: 36px;
+    background: url(./pixel-squirel.png) center center / cover;
+    border-radius: 0px;
+}
+
+.book-icon {
+    position: absolute;
+    left: 1px;
+    top: 0.25px;
+    width: 30px;
+    height: 30px;
+    background: url(./posts.png) center center / cover;
+    border-radius: 0px;
+}
+
+.phone-icon {
+    position: absolute;
+    left: 1px;
+    top: 0.25px;
+    width: 36px;
+    height: 36px;
+    background: url(./phone.png) center center / cover;
+    border-radius: 0px;
+}
+
+.background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(0px, 0px);
+    width: 1434px;
+    opacity: 0.5;
+}
+
+.bg-div {
+    position: absolute;
+    left: 179.47px;
+    top: 93.48px;
+}
